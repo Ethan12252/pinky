@@ -22,12 +22,13 @@ TOK_LSQUAR = "TOK_LSQUAR"  #  [
 TOK_RSQUAR = "TOK_RSQUAR"  #  ]
 TOK_COMMA = "TOK_COMMA"    #  ,
 TOK_DOT = "TOK_DOT"        #  .
+TOK_EQ  = "TOK_EQ"
 
 # Two-char tokens
-TOK_GE = "TOK_GE"  #  >=
-TOK_LE = "TOK_LE"  #  <=
-TOK_NE = "TOK_NE"  #  ~=
-TOK_EQ = "TOK_EQ"  #  ==
+TOK_GE = "TOK_GE"      #  >=
+TOK_LE = "TOK_LE"      #  <=
+TOK_NE = "TOK_NE"      #  ~=
+TOK_EQEQ = "TOK_EQEQ"  #  ==
 TOK_ASSIGN = "TOK_ASSIGN"  #  :=
 TOK_GTGT = "TOK_GTGT"  #  >>
 TOK_LTLT = "TOK_LTLT"  #  <<

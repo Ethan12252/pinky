@@ -82,7 +82,7 @@ class Lexer:
             elif ch == '{': self.add_token(TOK_LCURLY)
             elif ch == '}': self.add_token(TOK_RCURLY)
             elif ch == '[': self.add_token(TOK_LSQUAR)
-            elif ch == ']': self.add_token(TOK_LSQUAR)
+            elif ch == ']': self.add_token(TOK_RSQUAR)
             elif ch == ',': self.add_token(TOK_COMMA)
             elif ch == '.': self.add_token(TOK_DOT)
             
@@ -119,6 +119,12 @@ class Lexer:
                     self.add_token(TOK_GTGT)
                 else:
                     self.add_token(TOK_GT)
+
+            elif ch == '=':
+                if self.match('='):
+                    self.add_token(TOK_EQEQ)
+                else:
+                    self.add_token(TOK_EQ)
 
             # :, :=
             elif ch == ':':
